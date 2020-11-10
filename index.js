@@ -11,7 +11,7 @@ client.on('message', async message => {
 
     if (message.member.voice.channel) {
       const connection = await message.member.voice.channel.join();
-      const dispatcher = connection.play('/Users/simonjakobsson/Documents/gravmaskindiscord/Gravmaskin.m4a');
+      const dispatcher = connection.play(__dirname+ '/Gravmaskin.m4a');
     } else {
       message.reply('Grävmaskin hittar inget häng');
     }
