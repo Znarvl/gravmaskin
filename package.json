@@ -1,0 +1,15 @@
+{
+  "name": "gravmaskindiscord",
+  "version": "1.0.0",
+  "description": "Discord agent",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "10 packets transmitted, 10 packets received, 0.0% packet loss"
+  },
+  "author": "Simon",
+  "license": "ISC"
+}
