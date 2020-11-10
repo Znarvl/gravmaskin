@@ -8,8 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "10 packets transmitted, 10 packets received, 0.0% packet loss"
+    "url": ""
   },
   "author": "Simon",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/opus": "^0.3.3",
+    "discord.js": "^12.4.1",
+    "discord.js-commando": "github:discordjs/Commando",
+    "ffmpeg-static": "^4.2.7",
+    "opusscript": "0.0.7"
+  }
 }
