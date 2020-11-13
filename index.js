@@ -12,16 +12,15 @@ client.on('message', async message => {
     if (message.member.voice.channel) {
       const connection = await message.member.voice.channel.join();
 
-      if (message.content === 'grävmaskin') {
+      if (message.content.includes('grävmaskin')) {
       const dispatcher = connection.play(__dirname+ '/Gravmaskin.m4a');
       }
       
-      if (message.content === "Axel Boström" || message.content === "Sean") {
+      if (message.content.includes("Axel Boström")|| message.content.includes("Sean")) {
         const dispatcher = connection.play(__dirname + '/Waaa.m4a');
       }
       
     } 
- 
       else {
       message.reply('Grävmaskin hittar inget häng');
       }
