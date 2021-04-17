@@ -1,18 +1,16 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const config = require('./config.json');
 let names = ["Axel Boström", "Sean"]
 
-client.login(config.token);
+client.login('Nzc1ODAxOTU1NDAyNTE0NDUz.X6rn3w.wv93ikOl - QILC6mHlaEzN1mRw4Y');
 
 client.on('message', async message => {
   if (!message.guild) return;
 
-
     if (message.member.voice.channel) {
       const connection = await message.member.voice.channel.join();
 
-      if (message.content.includes('grävmaskin')) {
+      if (message.content.includes('Grävmaskin')) {
       const dispatcher = connection.play(__dirname+ '/Gravmaskin.m4a');
       }
       
@@ -21,10 +19,6 @@ client.on('message', async message => {
       }
       
     } 
-      else {
-      message.reply('Grävmaskin hittar inget häng');
-      }
-
 });
 
 client.on('ready', discordOn);
