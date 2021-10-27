@@ -26,6 +26,6 @@ client.on('message', async message => {
 client.on('ready', discordOn);
 
 function discordOn(){
-    console.log("yes");
+    console.log("yes man");
 }
  
